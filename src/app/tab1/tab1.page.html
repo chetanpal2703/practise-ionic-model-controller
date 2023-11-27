@@ -12,6 +12,35 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-label>Label</ion-label>
+  <form [formGroup]="ionicForm" (ngSubmit)="submitForm()">
+    <ion-list>
+      <ion-item>
+       <ion-label position="floating" class="change-font"> Product Name</ion-label>
+       <ion-input type="text" formControlName="productname"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+       <ion-label position="floating" class="change-font"> product price</ion-label>
+       <ion-input type="text" formControlName="productprice"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+       <ion-label position="floating" class="change-font"> product Quantity</ion-label>
+       <ion-input type="text" formControlName="productquantity"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+       <ion-label position="floating" class="change-font">product discount</ion-label>
+       <ion-input type="text" formControlName="productdiscount"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button type="submit" color="danger" expand="block">Submit</ion-button>
+  </form>
+  
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
 </ion-content>
