@@ -1,3 +1,28 @@
-<p>
+<!-- <p>
   modelcomponent works!
-</p>
+</p> -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium" (click)="cancel()">Cancel</ion-button>
+    </ion-buttons>
+    <ion-title>Welcome</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input labelPlacement="stacked" label="Enter your name" [(ngModel)]="name" placeholder="{{value.productname}}"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input labelPlacement="stacked" label="Enter your Age"  placeholder="{{value.productprice}}"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input labelPlacement="stacked" label="Enter your Departement"  placeholder="{{value.productquantity}}"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input labelPlacement="stacked" label="Enter your Experience"  placeholder="{{value.productdiscount}}"></ion-input>
+  </ion-item>
+</ion-content>

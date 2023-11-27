@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {  FormBuilder, FormGroup, } from '@angular/forms';
-
+import { ModalController } from '@ionic/angular';
+import { ModelcomponentComponent } from '../modelcomponent/modelcomponent.component';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -9,7 +10,7 @@ import {  FormBuilder, FormGroup, } from '@angular/forms';
 export class Tab1Page {
   ionicForm: FormGroup;
   formdata:any;
-  constructor(public formBuilder: FormBuilder) {
+  constructor(public formBuilder: FormBuilder,private modalCtrl: ModalController) {
     this.ionicForm = this.formBuilder.group({
       productname:"",
       productprice:"",
@@ -17,7 +18,7 @@ export class Tab1Page {
       productdiscount:""
     });
   }
-  submitForm = () => {
+  async openModal() {
     console.log("inside submit form")
     if (this.ionicForm.valid) {
     let user = {
@@ -29,8 +30,29 @@ export class Tab1Page {
     console.log(user,"user")
     this.formdata=user;
     console.log(this.formdata,"formdata")
-    console.log(JSON.stringify(user),"stringify")
-    }  
-  };
+    const modal = await this.modalCtrl.create({
+      component: ModelcomponentComponent,
+      componentProps: { value: this.formdata },
+      // componentProps: { value: {names:"vishaka Mam",age:"don't know",departement:"ionic",Experience:"More than 2 years "} }
+    });
+    modal.present();
+  }
+  //   submitForm = () => {
+  //   console.log("inside submit form")
+  //   if (this.ionicForm.valid) {
+  //   let user = {
+  //     productname:this.ionicForm.value.productname,
+  //     productprice:this.ionicForm.value.productprice,
+  //     productquantity:this.ionicForm.value.productquantity,
+  //     productdiscount:this.ionicForm.value.productdiscount,
+  //   }
+  //   console.log(user,"user")
+  //   this.formdata=user;
+  //   console.log(this.formdata,"formdata")
+  //   console.log(JSON.stringify(user),"stringify")
+  //   }  
+  // };
 
 }
+}
+

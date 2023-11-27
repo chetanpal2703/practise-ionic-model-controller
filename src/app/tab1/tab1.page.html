@@ -13,7 +13,8 @@
     </ion-toolbar>
   </ion-header>
   <ion-label>Label</ion-label>
-  <form [formGroup]="ionicForm" (ngSubmit)="submitForm()">
+  <form [formGroup]="ionicForm" (ngSubmit)="openModal()">
+  <!-- <form [formGroup]="ionicForm" > -->
     <ion-list>
       <ion-item>
        <ion-label position="floating" class="change-font"> Product Name</ion-label>
@@ -38,7 +39,7 @@
        <ion-input type="text" formControlName="productdiscount"></ion-input>
       </ion-item>
     </ion-list>
-    <ion-button type="submit" color="danger" expand="block">Submit</ion-button>
+    <ion-button expand="block" (click)="openModal()">Open</ion-button>
   </form>
   
 
