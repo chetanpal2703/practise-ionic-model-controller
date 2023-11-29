@@ -3,6 +3,7 @@ import { IonInput } from '@ionic/angular';
 import {  FormBuilder, FormGroup, } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
 import { ModelcomponentComponent } from '../modelcomponent/modelcomponent.component';
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
