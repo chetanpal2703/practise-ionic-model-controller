@@ -66,18 +66,20 @@
       
    </ion-content>
 
-   <ion-content>
+   
+<ion-content>
       <app-newcomponent>
-        <ion-text class="upperparagraph">this is upper paragraph 1</ion-text>
-        <ion-text id="loweparagraph"> this is lower paragraph 1</ion-text>
+        <ion-text #paragraph class="upperparagraph">this is upper paragraph 1</ion-text>
+        <ion-text id="loweparagraph"  > this is lower paragraph 1</ion-text>
       </app-newcomponent>
-      <app-newcomponent>
-          <p class="upperparagraph">this is upper paragraph 2</p>
-          <p id="loweparagraph"> this is lower paragraph 2</p>
-      </app-newcomponent>
+      
       <app-newcomponent>
         <p class="upperparagraph">this is upper paragraph 3</p>
         <p id="loweparagraph"> this is lower paragraph 3</p>
+      </app-newcomponent>
+      <app-newcomponent>
+        <p #myInput class="upperparagraph">this is upper paragraph 2</p>
+        <p id="loweparagraph"  > this is lower paragraph 2</p>
       </app-newcomponent>
   </ion-content>
    
