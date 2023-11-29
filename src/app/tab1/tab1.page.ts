@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component ,ViewChild} from '@angular/core';
+import { IonInput } from '@ionic/angular';
 import {  FormBuilder, FormGroup, } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
 import { ModelcomponentComponent } from '../modelcomponent/modelcomponent.component';
@@ -8,6 +9,9 @@ import { ModelcomponentComponent } from '../modelcomponent/modelcomponent.compon
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  modelinput:any;
+  testing:any;
+  @ViewChild('myInput') Input!: IonInput ;
   ionicForm: FormGroup;
   formdata:any;
   constructor(public formBuilder: FormBuilder,private modalCtrl: ModalController) {
@@ -17,6 +21,15 @@ export class Tab1Page {
       productquantity:"",
       productdiscount:""
     });
+  }
+  myfunction(){
+    console.log(this.Input.value);
+    this.testing=this.Input.value;
+    console.log(this.testing)
+
+  }
+  mynewfunction(){
+    console.log(this.modelinput,"via ngmodel")
   }
   async openModal() {
     console.log("inside submit form")
@@ -37,6 +50,9 @@ export class Tab1Page {
     });
     modal.present();
   }
+  // referncefunction(inputEL:HTMLInputElement){
+
+  // }
   //   submitForm = () => {
   //   console.log("inside submit form")
   //   if (this.ionicForm.valid) {

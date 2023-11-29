@@ -7,6 +7,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div *ngTemplateOutlet="myngtemplate"></div>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 1</ion-title>
@@ -41,6 +42,30 @@
     </ion-list>
     <ion-button expand="block" (click)="openModal()">Open</ion-button>
   </form>
+  <ion-item>
+    <ion-label position="floating" class="change-font"> Product Name</ion-label>
+    <ion-input type="text"  #myInput placeholder="Type something"></ion-input>
+    <ion-button (click)="myfunction()">click</ion-button>
+   </ion-item>
+
+
+   
+   <ion-item>
+    <ion-label position="floating" class="change-font"> Product Name</ion-label>
+    <ion-input type="text"  [(ngModel)]="modelinput" placeholder="Type something"></ion-input>
+    <ion-button (click)="mynewfunction()">click</ion-button>
+   </ion-item>
+   
+   <ion-content>
+      <h2>this is ng-template heading</h2>
+  
+      <ng-template #myngtemplate>
+        <h4>Inside the ng-template</h4>
+        <h3>It will not render until we define <b>ngtempateoutlet</b> </h3>
+      </ng-template>
+      
+   </ion-content>
+   
   
 
   <!-- <app-explore-container name="Tab 1 page"></app-explore-container> -->
