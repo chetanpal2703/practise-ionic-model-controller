@@ -1,17 +1,40 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar class="titles">
     <ion-title>
-      Tab 2
+     Products
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+ 
+ 
+  <!-- navigation="true" [slidesPerView]="1" [loop]="true" autoplay='{"delay": 1000}' autoHeight="true" -->
+  <!-- <swiper-container  >
+    <ng-container *ngFor="let item of apidata.products ; let i = index"> -->
+      <!-- <swiper-slide  > -->
+        <ion-card *ngFor="let item of apidata.products ; let i = index">
+          <swiper-container navigation="true" [slidesPerView]="1" [loop]="true" autoplay='{"delay": 1000}' autoHeight="true">
+            <swiper-slide *ngFor="let img of item.images">
+              <img src="{{img}}" alt="">
+            </swiper-slide>
+          </swiper-container>
+          
+          <!-- <img alt="Silhouette of mountains" src="{{item.thumbnail}}"/> -->
+          <ion-card-header>
+            <ion-card-title>Name: {{item.title}}</ion-card-title>
+            <ion-card-subtitle>Price: {{item.price}}</ion-card-subtitle>
+          </ion-card-header>
+            <ion-card-content> <h3>Item-category:{{item.category}} </h3>
+            <h3><b>Brand:</b>{{item.brand}}</h3>
+            <h3><b>Discount-Price:</b>{{item.discountPercentage}}</h3>
+            <h3><b>Rating:</b>{{item.rating}}</h3>
+            <h3><b>Stock:</b>{{item.stock}}</h3>
+            <h3><b>Description:</b>{{item.description}}</h3>
+            </ion-card-content>
+        </ion-card>
+      <!-- </swiper-slide> -->
+    <!-- </ng-container>
+  </swiper-container > -->
   
 </ion-content>

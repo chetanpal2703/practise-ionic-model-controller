@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-tab2',
@@ -6,7 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
-
-  constructor() {}
+  apidata:any;
+  constructor(private http:HttpClient) {
+    this.http.get('https://dummyjson.com/products').subscribe(response =>{
+      this.apidata=response;
+      console.log(this.apidata.products)
+    });
+  }
 
 }
