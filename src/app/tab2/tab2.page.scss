@@ -1,3 +1,57 @@
 ion-toolbar.titles.toolbar-title-default.md.in-toolbar.hydrated {
-    --background: #ff000042;
+    --background: black;
+    color: white;
+}
+ion-card {
+    --background: #fff;
+    --color: #000;
+  }
+  .paragraph{
+    text-align: center;
+    font-size: 16px;
+    font-family: system-ui;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+.descriptioncls{
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.568627451);
+    margin-top: 0px;
+    // text-overflow: ellipsis;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 1;
+    // -webkit-box-orient: vertical;
+    // overflow: hidden;
+    font-size: 13px;
+}
+.header {
+    
+    background-size: cover;
+}
+img {
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0px auto;
+    
+    max-height: 168px;
+    display: block;
+}
+button {
+    padding: 10px;
+    background-color: #ff0268;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.clsbtn{
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    background: #1e9b3c;
+    margin-bottom: 8px;
+}
+.despadding {
+    margin-bottom: 15px;
+    font-family: Poppins,sans-serif;
 }

@@ -18,6 +18,7 @@
     "@ionic/angular": "^7.0.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
+    "swiper": "^11.0.5",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2",
     "@angular-devkit/build-angular": "^17.0.0",
@@ -70,6 +71,22 @@
         "hash": "91109559695469517"
       },
       {
+        "file": ".nx/cache/file-map.json",
+        "hash": "4150830106049318726"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "11196203782819941136"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "41098625945894594"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "3729438612964907851"
+      },
+      {
         "file": ".vscode/extensions.json",
         "hash": "592272277800690021"
       },
@@ -95,11 +112,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "16727209125029822218"
+        "hash": "146329977357958670"
       },
       {
         "file": "package.json",
-        "hash": "9912870952467516103"
+        "hash": "2286631436441867996"
       },
       {
         "file": "resources/icon.png",
@@ -127,11 +144,11 @@
       },
       {
         "file": "src/app/app.component.ts",
-        "hash": "3298285516620454244"
+        "hash": "39025969117691819"
       },
       {
         "file": "src/app/app.module.ts",
-        "hash": "13461970137902578617"
+        "hash": "11138549743226100877"
       },
       {
         "file": "src/app/explore-container/explore-container.component.html",
@@ -187,7 +204,7 @@
       },
       {
         "file": "src/app/tab1/tab1-routing.module.ts",
-        "hash": "11381973081829977082"
+        "hash": "16166888087710516742"
       },
       {
         "file": "src/app/tab1/tab1.module.ts",
@@ -195,7 +212,7 @@
       },
       {
         "file": "src/app/tab1/tab1.page.html",
-        "hash": "16820669656809872885"
+        "hash": "7467787688136560524"
       },
       {
         "file": "src/app/tab1/tab1.page.scss",
@@ -207,7 +224,7 @@
       },
       {
         "file": "src/app/tab1/tab1.page.ts",
-        "hash": "17018265856107643284"
+        "hash": "8290019070201669637"
       },
       {
         "file": "src/app/tab2/tab2-routing.module.ts",
@@ -215,15 +232,15 @@
       },
       {
         "file": "src/app/tab2/tab2.module.ts",
-        "hash": "15372332323707330095"
+        "hash": "10569158369489225513"
       },
       {
         "file": "src/app/tab2/tab2.page.html",
-        "hash": "13340392613393970086"
+        "hash": "16855835469926462999"
       },
       {
         "file": "src/app/tab2/tab2.page.scss",
-        "hash": "3244421341483603138"
+        "hash": "5843291148846267165"
       },
       {
         "file": "src/app/tab2/tab2.page.spec.ts",
@@ -231,7 +248,7 @@
       },
       {
         "file": "src/app/tab2/tab2.page.ts",
-        "hash": "1649071404575094014"
+        "hash": "8579688417068748437"
       },
       {
         "file": "src/app/tab3/tab3-routing.module.ts",
@@ -259,7 +276,7 @@
       },
       {
         "file": "src/app/tabs/tabs-routing.module.ts",
-        "hash": "7044889794849427242"
+        "hash": "604364613641212291"
       },
       {
         "file": "src/app/tabs/tabs.module.ts",
@@ -303,7 +320,7 @@
       },
       {
         "file": "src/index.html",
-        "hash": "5962093970713772175"
+        "hash": "12712253876668633298"
       },
       {
         "file": "src/main.ts",
@@ -331,7 +348,7 @@
       },
       {
         "file": "tsconfig.json",
-        "hash": "9300148005582941852"
+        "hash": "16966134560215960429"
       },
       {
         "file": "tsconfig.spec.json",
