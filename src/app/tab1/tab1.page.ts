@@ -1,4 +1,4 @@
-import { Component ,ViewChild} from '@angular/core';
+import { Component ,ViewChild, afterNextRender} from '@angular/core';
 import { IonInput } from '@ionic/angular';
 import {  FormBuilder, FormGroup, } from '@angular/forms';
 import { ModalController } from '@ionic/angular';
@@ -16,6 +16,7 @@ import { NavController } from '@ionic/angular';
 export class Tab1Page {
     modelinput:any;
     testing:any;
+    observablearray:any[]=[];
     sendingdatatohttp:any;         
     @ViewChild('myInput') Input!: IonInput ;
     ionicForm: FormGroup;
@@ -39,6 +40,31 @@ export class Tab1Page {
     })
 
     }
+    observ=new Observable((obs)=>{
+      obs.next(1);
+      obs.next(2);
+      obs.next(3);
+      obs.next(4);
+      obs.next(5);
+
+    })
+
+    getDataViaObservable(){
+      this.observ.subscribe({
+        next:(val:any)=>{
+          console.log("came")
+          this.observablearray.push(val);
+          console.log(this.observablearray,"dat");
+        },
+        error(err){
+          console.log(err);
+        },
+        complete(){
+          console.log("all data received ")
+        }
+      }
+      )
+    }
     navigatetotab(){
       this.navCtrl.navigateForward('/tabs/tab2');
     }
@@ -46,7 +72,6 @@ export class Tab1Page {
         console.log(this.Input.value);
         this.testing=this.Input.value;
         console.log(this.testing)
-
       }
       mynewfunction(){
         console.log(this.modelinput,"via ngmodel")

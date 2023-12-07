@@ -72,7 +72,7 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "6106783141269796174"
+        "hash": "6901771315696729227"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -248,7 +248,7 @@
       },
       {
         "file": "src/app/tab2/tab2.page.ts",
-        "hash": "514690067902401618"
+        "hash": "680867934676895557"
       },
       {
         "file": "src/app/tab3/tab3-routing.module.ts",

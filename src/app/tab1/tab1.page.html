@@ -7,6 +7,10 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <button (click)="getDataViaObservable()">getting data from observable</button>
+  <div *ngFor="let x of observablearray ">
+    {{x}}
+  </div>
   <button (click)="navigatetotab()"> Navigate to tab2</button>
   <div *ngTemplateOutlet="myngtemplate"></div>
   <ion-header collapse="condense">
