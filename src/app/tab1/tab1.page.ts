@@ -46,6 +46,7 @@ export class Tab1Page {
       obs.next(3);
       obs.next(4);
       obs.next(5);
+      obs.complete()
 
     })
 

@@ -72,7 +72,7 @@
       },
       {
         "file": ".nx/cache/file-map.json",
-        "hash": "6901771315696729227"
+        "hash": "4587422672123295672"
       },
       {
         "file": ".nx/cache/lockfile.hash",
@@ -212,7 +212,7 @@
       },
       {
         "file": "src/app/tab1/tab1.page.html",
-        "hash": "7467787688136560524"
+        "hash": "18261485924852118662"
       },
       {
         "file": "src/app/tab1/tab1.page.scss",
@@ -224,7 +224,7 @@
       },
       {
         "file": "src/app/tab1/tab1.page.ts",
-        "hash": "8290019070201669637"
+        "hash": "16695642786830679523"
       },
       {
         "file": "src/app/tab2/tab2-routing.module.ts",
@@ -276,7 +276,7 @@
       },
       {
         "file": "src/app/tabs/tabs-routing.module.ts",
-        "hash": "604364613641212291"
+        "hash": "6235811041348245313"
       },
       {
         "file": "src/app/tabs/tabs.module.ts",
