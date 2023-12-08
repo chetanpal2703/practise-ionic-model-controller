@@ -3,6 +3,7 @@ import { FormGroup,FormBuilder } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { NavController } from '@ionic/angular';
 import { map } from 'rxjs';
+import { usingService } from '../services/myservice.service';
 
 @Component({
   selector: 'app-tab3',
@@ -59,8 +60,15 @@ export class Tab3Page {
     this.data=this.ionicForm.value;
     console.log(this.data)
     this.makingrequest();
+    
     console.log("hi")
     this.ionicForm.reset();
+  }
+
+
+  getdataviaservice(){
+    let subservice=new usingService();
+    subservice.getdataviaservice();
   }
 
 }
