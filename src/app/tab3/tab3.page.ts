@@ -8,13 +8,14 @@ import { usingService } from '../services/myservice.service';
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
-  styleUrls: ['tab3.page.scss']
+  styleUrls: ['tab3.page.scss'],
+  providers:[usingService]
 })
 export class Tab3Page {
   ionicForm: FormGroup;
   data:any;
   showdata:any;
-  constructor(public formBuilder: FormBuilder,private http:HttpClient,private navCtrl: NavController) {
+  constructor(public formBuilder: FormBuilder,private http:HttpClient,private navCtrl: NavController,private subService:usingService) {
     this.ionicForm = this.formBuilder.group({
       productname:"",
       productprice:"",
@@ -67,8 +68,8 @@ export class Tab3Page {
 
 
   getdataviaservice(){
-    let subservice=new usingService();
-    subservice.getdataviaservice();
+    
+    this.subService.getdataviaservice();
   }
 
 }
